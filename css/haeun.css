@@ -72,7 +72,7 @@ main img{border-radius: 10px;}
 }
 #nogal nav {border-bottom: 2px solid #514dbc; display: flex;align-items: flex-end;}
 
-#notice{position: absolute; width: 100%;top: 40px;}
+#notice{ width: 100%;}
 
 #notice ul{line-height: 180%;padding-top: 20px; list-style-position: inside;}
 
@@ -119,3 +119,18 @@ footer p {
     margin-right: 10px;
 }
 #popup h3{padding-bottom: 20px;}
+
+@media(max-width:500px){
+ 
+    #layout{
+        flex-direction: column;
+        width: 100%;
+    }
+    header {width: 100%;}
+    header> h1 img{
+       margin: auto;
+    }
+    .subMenu{position: initial;}
+    #right{width: 100%;}
+    main{flex-direction: column;}
+}
