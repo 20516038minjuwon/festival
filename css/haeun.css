@@ -1,0 +1,121 @@
+@charset  "utf-8";
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html,body{color: #222328;}
+a{
+    color: #222328;text-decoration: none;
+}
+img{
+    display: block;max-width: 100%;
+}
+#layout{
+    width: 1000px;height: 650px; display: flex;position: relative;
+}
+haeder{
+    width: 200px;
+}
+header ul a{display: block;}
+header >h1 {
+    padding: 20px 0;
+}
+.mainMenu{
+    background: #514dbc;color: white;
+    font-size: 1.1rem; font-weight: bold;
+    padding: 8px;text-align: center;
+}
+.mainMenu:hover{background: rgba(145, 0, 0, 0.769);}
+.subMenu{
+     background: #8a87eb; 
+     transition: 0.7s;
+    position: absolute; width: 100%;z-index: 3;
+    left: 100%; top: 0;height: 0;overflow: hidden;
+}
+header li{position: relative;}
+.subMenu a{
+    text-align: center;padding: 7px;
+}
+.subMenu a:hover{background: #e98e0a;color: white;}
+
+header li:hover .subMenu{height: 115px;}
+
+#right{width: 800px;}
+
+#slideArea{
+    width: 0;height: 0;overflow: hidden;position: absolute;z-index: 2;
+}
+#slide{height: 350px;position: relative;}
+
+#slide a{position: absolute; transition: opacity 1s;}
+
+main{display: flex;gap: 20px;padding-bottom: 20px;}
+
+main h2{width: 0;height: 0;overflow: hidden;z-index: -2;}
+
+main img{border-radius: 10px;}
+
+#nogal{
+    flex: 1.4; 
+    position: relative; padding-top: 10px;
+}
+#nogal button {
+    padding: 5px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: gainsboro;
+    border: 1px solid gray;
+    border-bottom: none;
+    font-weight: bold;
+}
+#nogal button.active{
+    padding-top: 10px;background: #514dbc71;
+}
+#nogal nav {border-bottom: 2px solid #514dbc; display: flex;align-items: flex-end;}
+
+#notice{position: absolute; width: 100%;top: 40px;}
+
+#notice ul{line-height: 180%;padding-top: 20px; list-style-position: inside;}
+
+#notice span {float: right;}
+
+#notice a:hover{color: #e98e0a; text-decoration: underline;}
+
+#gallery{
+    width: 100%;display: flex;
+     justify-content: space-evenly;
+    margin-top: 20px;
+    display: none;
+     
+}
+
+#banner{
+    flex: 1;padding-top: 47px;
+}
+#quick{
+    flex: 1;padding-top: 47px;
+}
+footer{
+    display: flex;
+    border: 2px solid gainsboro;
+}
+footer div{border-left: 2px dashed gainsboro; width: 100%; }
+footer h3 {padding: 30px 20px;}
+footer nav{padding: 10px 0 10px 20px;}
+footer p {
+    font-size: 12px;border-top: 2px dashed gainsboro;
+    padding: 10px 0 10px 20px;
+}
+#popup{
+    width: 500px;height: 350px;
+    border-radius: 20px; box-shadow: 0 0 10px black;
+    background: white; line-height: 170%;
+    padding: 10px;
+   position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+   display:none;
+}
+#popup button{
+    padding: 5px 15px;
+    float: right;
+    margin-right: 10px;
+}
+#popup h3{padding-bottom: 20px;}
